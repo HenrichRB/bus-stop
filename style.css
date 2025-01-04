@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#search-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#route-search {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+#search-button:hover {
+    background-color: #45a049;
+}
+
+#results-section {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#results-section > h2 {
+    text-align: center;
+}
+
+#control-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#control-point {
+    padding: 1rem;
+    background-color: #8ef5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+}
+
+footer > p {
+    text-align: center;
+    padding: 0.5rem;
+    
+}

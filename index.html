@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Ônibus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta de Horário de Ônibus</h1>
+    </header>
+    <Main>
+        <section id="search-section">
+            <label for="route-search">Procure sua rota:</label>
+            <input type="text" id="route-search" placeholder="Número ou nome da rota" autocomplete="off">
+            <button id="search-button">Buscar</button>
+        </section>
+        <!-- Área de resultado -->
+        <section id="results-section">
+            <h2>Informações da rota</h2>
+            <div id="control-points">
+                <!-- Os pontos de controle com os horarios do onibus serão adicionados dinamicamente aqui -->
+            </div>
+        </section>
+    </Main>
+    <footer>
+        <p>© 2025, Projeto de Henrique Ribeiro</p>
+    </footer>
+</body>
+</html>
