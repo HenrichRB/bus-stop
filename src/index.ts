@@ -69,6 +69,8 @@ async function initialize(): Promise<void>{
             searchContainer.style.display = "block";
         } catch(error) {
             console.error("Erro durante a inicialização:", error);
+            loadingInitial.style.display = "none";
+            loadingSpinner.style.display = "none";
             errorInitial.style.display = "block";
         
         } finally {
