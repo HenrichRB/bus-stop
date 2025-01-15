@@ -12,9 +12,15 @@
     </header>
     <Main>
         <section id="search-section">
+            <div id="loading-initial" style="display: block;">Carregando rotas...</div>
+            <div id="loading-spinner" style="display: block;"></div>
+            <div id="error-initial" style="display: none;">Erro ao carregar as rotas</div>
+            <div id="search-container" style="display: none;">
             <label for="route-search">Procure sua rota:</label>
-            <input type="text" id="route-search" placeholder="Número ou nome da rota" autocomplete="off">
+            <input type="text" id="route-search" placeholder="Número ou nome da rota" autocomplete="off" list="route-suggestions">
+            <datalist id="route-suggestions"></datalist>
             <button id="search-button">Buscar</button>
+            </div>
         </section>
         <!-- Área de resultado -->
         <section id="results-section">
@@ -27,5 +33,6 @@
     <footer>
         <p>© 2025, Projeto de Henrique Ribeiro</p>
     </footer>
+    <script src="dist/index.js" type="module"></script>
 </body>
 </html>
